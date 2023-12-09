@@ -33,3 +33,10 @@
 - one section
 - provreading
 - canvas animation sin waves or cos
+
+## single note
+
+- without images
+- title
+- date
+- main text

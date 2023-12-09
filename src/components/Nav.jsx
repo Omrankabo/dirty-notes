@@ -22,7 +22,7 @@ const Nav = () => {
         {/* logo */}
         <Link to='/' className='text-lg font-bold'>Dirty Notes</Link>
         {/* desktop*/}
-        <div className='items-center justify-start flex-1 hidden gap-6 lg:flex'>
+        <div className='items-center justify-start flex-1 hidden gap-6 md:flex'>
           {/* TODO: react router dom internal links */}
           <NavLink to={'/Notes'} className='cursor-pointer'>Notes</NavLink>
           <NavLink to={'/Contact'} className='cursor-pointer'>Contact</NavLink>
@@ -37,7 +37,7 @@ const Nav = () => {
             
           </button>
           {/* container */}
-          <div className='lg:hidden'>
+          <div className='md:hidden'>
             {/* make a lighter bg */}
             <button className='p-2 rounded-sm cursor-pointer text-text-base bg-secondary-base' onClick={handleClick}>
               <FaBars className=''/>
