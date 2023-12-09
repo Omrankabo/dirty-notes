@@ -18,7 +18,7 @@ const Contact = () => {
             </div>
             <form> 
                 <div>
-                    <span class="uppercase text-sm text-secondary-base font-bold">
+                    <span class="uppercase text-sm text-accent font-bold">
                         Full Name
                     </span>
                     <input
@@ -29,7 +29,7 @@ const Contact = () => {
                     />
                 </div>
                 <div class="mt-8">
-                    <span class="uppercase text-sm text-secondary-base font-bold">
+                    <span class="uppercase text-sm text-accent font-bold">
                         Email
                     </span>
                     <input
@@ -40,7 +40,7 @@ const Contact = () => {
                     />
                 </div>
                 <div class="mt-8">
-                    <span class="uppercase text-sm text-secondary-base font-bold">
+                    <span class="uppercase text-sm text-accent font-bold">
                         Message
                     </span>
                     <textarea
