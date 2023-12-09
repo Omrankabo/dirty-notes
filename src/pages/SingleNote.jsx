@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SignleNote = () => {
+const SingleNote = () => {
   return (
     <div>
       singleNote
@@ -8,4 +8,4 @@ const SignleNote = () => {
   )
 }
 
-export default SignleNote
+export default SingleNote

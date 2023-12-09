@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   content: [
     "./index.html",
@@ -6,7 +7,7 @@ export default {
   ],
   theme: {
     fontFamily: {
-      primary: ['inter' , 'sans-serif'],
+      primary: ['poppins' , 'sans-serif'],
     },
     screens: {
       sm: '640px',
@@ -16,11 +17,11 @@ export default {
     },
     extend: {
       colors: {
-        primary: '#03191e',
-        secondary: '#ffe066',
-        third:'#70c1b3',
-        outerSpace:'#4a5759',
-        bg:' rgba(112, 193, 179, 0.2)'
+        text:'var(--text)',
+        background: 'var(--background)',
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        accent: 'var(--accent)',
       },
     },
   },
