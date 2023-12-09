@@ -1,83 +1,66 @@
-import React from 'react'
+
 
 const Contact = () => {
-  return ( 
-    <div className='container w-5/6 lg:max-w-[875px] mx-auto'>
-      <div class="px-5 grid gap-8 grid-cols-1 md:grid-cols-2 py-24 mx-auto bg-gray-100 text-gray-900 rounded-lg">
-          <div class="flex flex-col justify-center">
-              <div>
-                  <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
-                      Lets talk about everything!
-                  </h2>
-                  <div class="text-gray-700 mt-8">
-                      Hate forms? Send us an &nbsp;
-                      <a class="underline" href="mailto:omrankabo@gmail.com">
+    return ( 
+        <div className='container w-full lg:max-w-[875px] mx-auto'>
+        <div class="px-5 grid gap-8 grid-cols-1 md:grid-cols-2 py-24 mx-auto bg-background-50  text-text-base rounded-lg">
+            <div class="flex flex-col justify-center">
+                <div>
+                    <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
+                        Feel free to send us your opinon. 
+                    </h2>
+                    <div class="text-text-base mt-8">
+                        Hate forms? Send us an&nbsp;<a class="underline" href="mailto:omrankabo@gmail.com">
                         email 
-                      </a>
-                      instead.
-                  </div>
-              </div>
-              {/* TODO: change this contact image */}
-              <div class="mt-12 text-center">
-                  <img src="https://dummyimage.com/500x300" alt="Contact" />
-              </div>
-          </div>
-          <form> 
-              <div>
-                  <span class="uppercase text-sm text-gray-600 font-bold">
-                      Full Name
-                  </span>
-                  <input
-                      class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
-                      type="text"
-                      placeholder="Enter your Name"
-                      required
-                  />
-              </div>
-              <div class="mt-8">
-                  <span class="uppercase text-sm text-gray-600 font-bold">
-                      Email
-                  </span>
-                  <input
-                      class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
-                      type="email"
-                      placeholder="Enter your email address"
-                      required
-                  />
-              </div>
-              <div class="mt-8">
-                  <span class="uppercase text-sm text-gray-600 font-bold">
-                      Phone Number
-                  </span>
-                  <input
-                      class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
-                      type="phone"
-                      placeholder="Enter your Phone Number including country code"
-                      required
-                  />
-              </div>
-              <div class="mt-8">
-                  <span class="uppercase text-sm text-gray-600 font-bold">
-                      Message
-                  </span>
-                  <textarea
-                      class="w-full h-32 bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-indigo-400"
-                      placeholder="Enter your Message"
-                      required
-                  ></textarea>
-              </div>
-              <div class="mt-8">
-                  <button
-                      class="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-indigo-700"
-                      type="submit"
-                  >
-                      Send Message
-                  </button>
-              </div>
-          </form>
-      </div>
-    </div>
-  )
+                        </a> instead.
+                    </div>
+                </div>
+            </div>
+            <form> 
+                <div>
+                    <span class="uppercase text-sm text-secondary-base font-bold">
+                        Full Name
+                    </span>
+                    <input
+                        class="w-full bg-transparent border-2 border-secondary-base text-text-base mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-accent focus:border-accent"
+                        type="text"
+                        placeholder="Enter your Name"
+                        required
+                    />
+                </div>
+                <div class="mt-8">
+                    <span class="uppercase text-sm text-secondary-base font-bold">
+                        Email
+                    </span>
+                    <input
+                        class="w-full bg-transparent border-2 border-secondary-base text-text-base mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-accent focus:border-accent"
+                        type="email"
+                        placeholder="Enter your email address"
+                        required
+                    />
+                </div>
+                <div class="mt-8">
+                    <span class="uppercase text-sm text-secondary-base font-bold">
+                        Message
+                    </span>
+                    <textarea
+                        class="w-full h-32 bg-transparent border-2 border-secondary-base text-text-base mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-accent focus:border-accent"
+                        placeholder="Enter your Message"
+                        required
+                    ></textarea>
+                </div>
+                <div class="mt-8">
+                    <button
+                        class="uppercase text-sm font-bold tracking-wide bg-secondary-base text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-accent"
+                        type="submit"
+                    >
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+        </div>
+)
 }
 
 export default Contact

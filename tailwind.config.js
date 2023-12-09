@@ -17,11 +17,26 @@ export default {
     },
     extend: {
       colors: {
-        text:'var(--text)',
-        background: 'var(--background)',
-        primary: 'var(--primary)',
-        secondary: 'var(--secondary)',
+        text:{
+          100: 'color-mix(in srgb,var(--text) 5%, white)',
+          base:'var(--text)',
+          800: 'color-mix(in srgb,var(--text) 85%, black 80%)',
+        },
+        background: {
+          50: 'color-mix(in srgb,var(--background) 55%, white 5%)',
+          base:'var(--background)',
+          600: 'color-mix(in srgb,var(--background) 85%, black 45%)',
+        },
+        primary:{
+          100: 'color-mix(in srgb,var(--primary) 10%, white)',
+          base:'var(--primary)'
+        } ,
+        secondary:{
+          100: 'color-mix(in srgb,var(--secondary) 40%, black 14%)',
+          base:'var(--secondary)',
+        } ,
         accent: 'var(--accent)',
+        accentLighter: 'var(--accentLighter)',
       },
     },
   },

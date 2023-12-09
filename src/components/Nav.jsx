@@ -30,7 +30,7 @@ const Nav = () => {
         {/* mobile */}
         <div className='flex items-center gap-4 pr-4'>
           {/* theme toggle */}
-          <button className='p-2 rounded-sm cursor-pointer text-text bg-secondary hover:bg-accent' onClick={handleTheme}>
+          <button className='p-2 rounded-sm cursor-pointer text-text-base ' onClick={handleTheme}>
             {
               theme? <IoIosSunny/> : <IoIosMoon/>
             }
@@ -39,14 +39,14 @@ const Nav = () => {
           {/* container */}
           <div className='lg:hidden'>
             {/* make a lighter bg */}
-            <button className='p-2 rounded-sm cursor-pointer text-text bg-accent' onClick={handleClick}>
+            <button className='p-2 rounded-sm cursor-pointer text-text-base bg-secondary-base' onClick={handleClick}>
               <FaBars className=''/>
             </button>
             {/* TODO: framer motion */}
-            <div className={`${open? 'top-16': '-top-96'} max-w-[280px] absolute flex-col w-2/4 py-2 border-2 rounded-lg bg-accent right-4  border-secondary text-white`}>
-              <NavLink to={'/'} className='block px-4 py-2 transition-all cursor-pointer hover:bg-secondary transition-300'>About</NavLink>
-              <NavLink to={'/Notes'} className='block px-4 py-2 transition-all cursor-pointer hover:bg-secondary transition-300'>Notes</NavLink>
-              <NavLink to={'/Contact'} className='block px-4 py-2 transition-all cursor-pointer hover:bg-secondary transition-300'>Contact</NavLink>
+            <div className={`${open? 'top-16': '-top-96'} max-w-[200px] sm:max-w-[280px] absolute flex-col w-2/4 py-2 border-2 rounded-lg bg-accentLighter backdrop-blur-lg right-8  border-secondary-base text-text-100`}>
+              <NavLink to={'/'} className='block px-4 py-2 transition-all cursor-pointer hover:bg-secondary-base transition-300 hover:underline'>About</NavLink>
+              <NavLink to={'/Notes'} className='block px-4 py-2 transition-all cursor-pointer hover:bg-secondary-base transition-300 hover:underline'>Notes</NavLink>
+              <NavLink to={'/Contact'} className='block px-4 py-2 transition-all cursor-pointer hover:bg-secondary-base transition-300 hover:underline'>Contact</NavLink>
             </div>
           </div>
         </div>

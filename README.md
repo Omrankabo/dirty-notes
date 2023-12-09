@@ -31,6 +31,7 @@ make the contact us working with a js email library.
 - foucs with taps and buttons
 - accessablity
 - a better footer
+- get better images
 
 > is SEO important in this stage?
 i don't think so. but we will develop a semantic page anyway and the rest will be later.
@@ -42,6 +43,10 @@ i don't think so. but we will develop a semantic page anyway and the rest will b
 
 - use active links in react-router-dom
 - in the current version i don't need to cach data of to use external database or back end so i have to keep the functionality minimal as possible
+- high order funtion for cards
+- abstract categories to an external compenent
+- send emails or whatsapp message with contact page via email service or library
+- lazy loading and suspanse
 
 ## redesign
 
@@ -51,3 +56,9 @@ i don't think so. but we will develop a semantic page anyway and the rest will b
 
 blog section ii
 footer 5
+
+## todo
+
+- single note page
+- category filter funtionality
+- build a sceheme to show notes
