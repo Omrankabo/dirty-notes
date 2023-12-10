@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import { Routes ,Route } from 'react-router-dom';
 import { useTheme } from './context/ThemeProvider';
+import SingleNote from './pages/SingleNote';
 
 const App = () => {
   const {theme} = useTheme()
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='/' element={<Home/>}/>
           <Route path='/notes' element={<Notes/>}/>
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/Note' element={<SingleNote/>}/>
           <Route path='*' element={<NotFound/>}/>
         </Routes>
       </div>
