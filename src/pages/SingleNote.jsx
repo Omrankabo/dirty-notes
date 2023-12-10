@@ -1,4 +1,4 @@
-import ReactMarkdown from 'react-markdown'
+
 const SingleNote = () => {
   return (
     <section className='min-h-screen'>
