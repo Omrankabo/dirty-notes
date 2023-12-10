@@ -44,7 +44,7 @@ export const getAllPublished = (folder) =>{
 
 export const getSinglePost = (slug,folder)=>{
     const source = getFileContent(`${slug}.md`,folder);
-    const {data: frontmatter, content} = matter.source();
+    const {data: frontmatter, content} = matter(source);
     return {
         frontmatter,
         content,
