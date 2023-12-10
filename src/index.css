@@ -11,6 +11,7 @@
         --secondary: #6eb8ed;
         --accent: #0b81d5;
         --accentLighter: #0b81d56d;
+        --active:#0b81d5ba;
 
     }
     .dark{
@@ -20,6 +21,7 @@
         --secondary: #125b8f;
         --accent: #2a9ff4;
         --accentLighter: #0b81d56d;
+        --active: #2aa0f4ba;
 
     }
     /* :root{

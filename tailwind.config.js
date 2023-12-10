@@ -37,6 +37,7 @@ export default {
         } ,
         accent: 'var(--accent)',
         accentLighter: 'var(--accentLighter)',
+        active: 'var(--active)'
       },
     },
   },

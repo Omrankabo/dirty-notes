@@ -9,7 +9,7 @@ const Card = () => {
           <h1 class="title-font text-lg font-medium text-text-base mb-2">Horizontal asymptotes</h1>
           <p class="leading-relaxed mb-2 text-sm text-text-800">How to evaulate vertical and horizontal asymptotes, and how to show them in a graph.</p>
           <div class="flex items-center flex-wrap">
-              <a class="text-text-base inline-flex items-center gap-2 md:mb-2 lg:mb-0" href='/'>Learn More
+              <a class="text-text-base inline-flex items-center gap-2 md:mb-2 lg:mb-0" href='/note'>Learn More
               <IoMdArrowForward/>
               </a>
           </div>

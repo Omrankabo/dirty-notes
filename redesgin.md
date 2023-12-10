@@ -17,21 +17,7 @@
 
 ## notes
 
-- set differents colors for each category
-
-## contact
-
-## single note scheme
-
-- title
-- date
-- category
-- content
-- brife
-- report issue
-- support ar
-- next update ---> like & dislike & comments & views
-- display inside a card
+<!-- - for active category set a different color -->
 
 ## home page
 
@@ -45,8 +31,11 @@
 
 - without images
 - title
-- date
 - main text
+- display inside a card
+- report issue
+- next update ---> like & dislike & comments & views
+- support ar
 
 ## card
 
