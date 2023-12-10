@@ -1,9 +1,10 @@
 import { IoMdArrowForward } from "react-icons/io";
+import Box from "./Box";
 
 const Card = () => {
   return (
     // TODO: change into react-router link to this particular topic
-      <div class=" border-2 border-secondary-100 border-opacity-60 rounded-lg overflow-hidden">
+      <Box>
         <div class="p-6 bg-background-50">
           <h2 class="tracking-widest text-xs title-font font-medium text-accent mb-1">#Culculus</h2>
           <h1 class="title-font text-lg font-medium text-text-base mb-2">Horizontal asymptotes</h1>
@@ -14,7 +15,7 @@ const Card = () => {
               </a>
           </div>
         </div>
-      </div>
+      </Box>
   )
 }
 

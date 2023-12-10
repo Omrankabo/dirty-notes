@@ -1,8 +1,9 @@
+import Box from "../components/Box"
 
 
 const Contact = () => {
     return ( 
-        <div className='container w-full lg:max-w-[875px] mx-auto'>
+        <Box className='container w-full lg:max-w-[875px] mx-auto border-none'>
         <div class="px-5 grid gap-8 grid-cols-1 md:grid-cols-2 py-24 mx-auto bg-background-50  text-text-base rounded-lg">
             <div class="flex flex-col justify-center">
                 <div>
@@ -59,7 +60,7 @@ const Contact = () => {
                 </div>
             </form>
         </div>
-        </div>
+        </Box>
 )
 }
 

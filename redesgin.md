@@ -29,7 +29,7 @@
 
 ## single note
 
-- without images
+<!-- - without images -->
 - title
 - main text
 - display inside a card

@@ -1,6 +1,14 @@
 import React from 'react'
 import Card from '../components/Card'
 const Notes = () => {
+  // temporary list
+  const notes = [
+    {
+      category:'culculus',
+      title: 'Horizontal asymptotes',
+      description: 'How to evaulate vertical and horizontal asymptotes, and how to show them in a graph.'
+    }
+  ]
   return (
     <section className=' container w-5/6 lg:max-w-[875px] mx-auto'>
       <h1 className='w-full mb-6 text-2xl font-medium uppercase '>Choose a category 👀</h1>
