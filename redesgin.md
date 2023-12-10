@@ -2,7 +2,7 @@
 
 ## app
 
-- change the size of the container
+<!-- - change the size of the container -->
 
 ## navigation
 

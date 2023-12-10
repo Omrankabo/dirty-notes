@@ -18,7 +18,7 @@ const Nav = () => {
   return (
     // TODO: how to make blur in tailwind  
     <nav className='fixed top-0 left-0 items-center w-screen py-4 backdrop-blur-sm'>
-      <div className='container gap-16 md:mx-auto md:max-w-[684px] lg:max-w-[736px] flex justify-between px-4'>  
+      <div className='container gap-16 md:mx-auto md:max-w-[700px] lg:max-w-[986px] flex justify-between px-4'>  
         {/* logo */}
         <Link to='/' className='text-lg font-bold'>Dirty Notes</Link>
         {/* desktop*/}

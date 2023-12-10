@@ -3,7 +3,7 @@ import {FaTelegram, FaWhatsapp} from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <footer class="text-text body-font mt-6 container md:mx-auto md:max-w-[684px] lg:max-w-[736px]">
+    <footer class="text-text body-font mt-6 container md:mx-auto md:max-w-[700px] lg:max-w-[986px]">
       <div class="container px-5 pb-8 mx-auto flex items-center sm:flex-row flex-col">
         <Link to={'/'} class="flex title-font font-medium items-center md:justify-start justify-center text-text">
           <span class="ml-3 text-xl">Dirty Notes</span>
