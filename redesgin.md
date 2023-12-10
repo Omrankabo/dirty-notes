@@ -13,7 +13,7 @@
 <!-- - change every text bg to the new values -->
 <!-- - loading postioning -->
 <!-- - make a lighter color in tailwind -->
-- close mobile nav on click of a link button
+<!-- - close mobile nav on click of a link button -->
 
 ## notes
 

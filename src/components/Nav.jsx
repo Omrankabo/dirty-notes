@@ -44,9 +44,9 @@ const Nav = () => {
             </button>
             {/* TODO: framer motion */}
             <div className={`${open? 'top-16': '-top-96'} max-w-[200px] sm:max-w-[280px] absolute flex-col w-2/4 py-2 border-2 rounded-lg bg-accentLighter backdrop-blur-lg right-8  border-secondary-base text-text-100`}>
-              <NavLink to={'/'} className='block px-4 py-2 transition-all cursor-pointer hover:bg-secondary-base transition-300 hover:underline'>About</NavLink>
-              <NavLink to={'/Notes'} className='block px-4 py-2 transition-all cursor-pointer hover:bg-secondary-base transition-300 hover:underline'>Notes</NavLink>
-              <NavLink to={'/Contact'} className='block px-4 py-2 transition-all cursor-pointer hover:bg-secondary-base transition-300 hover:underline'>Contact</NavLink>
+              <NavLink onClick={handleClick} to={'/'} className='block px-4 py-2 transition-all cursor-pointer hover:bg-secondary-base transition-300 hover:underline'>About</NavLink>
+              <NavLink onClick={handleClick} to={'/Notes'} className='block px-4 py-2 transition-all cursor-pointer hover:bg-secondary-base transition-300 hover:underline'>Notes</NavLink>
+              <NavLink onClick={handleClick} to={'/Contact'} className='block px-4 py-2 transition-all cursor-pointer hover:bg-secondary-base transition-300 hover:underline'>Contact</NavLink>
             </div>
           </div>
         </div>
