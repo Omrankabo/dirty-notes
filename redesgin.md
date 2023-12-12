@@ -25,21 +25,21 @@
 - provreading
 - canvas animation sin waves or cos
 - remove some padding from the top
-- change colors theme
+<!-- - change colors theme -->
 
 ## single note
 
 <!-- - without images -->
 - title
 - main text
-- display inside a card
+<!-- - display inside a card -->
 - report issue
 - next update ---> like & dislike & comments & views
 - support ar
 
 ## card
 
-- make the card component reusable
+<!-- - make the card component reusable -->
 
 ## footer
 

@@ -1,12 +1,15 @@
 import Nav from './components/Nav';
-import Home from './pages/Home';
-import Notes from './pages/Notes';
-import NotFound from './pages/NotFound';
-import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import { Routes ,Route } from 'react-router-dom';
 import { useTheme } from './context/ThemeProvider';
-import SingleNote from './pages/SingleNote';
+import { lazy,Suspense } from 'react';
+import Loading from './components/loader/Loading';
+
+const Home = lazy(()=>import('./pages/Home'))
+const NotFound = lazy(()=>import('./pages/NotFound'))
+const Notes = lazy(()=>import('./pages/Notes'))
+const Contact = lazy(()=>import('./pages/Contact'))
+const SingleNote = lazy(()=>import('./pages/SingleNote'))
 
 const App = () => {
   const {theme} = useTheme()
@@ -15,11 +18,26 @@ const App = () => {
       <Nav/>
       <div className='container sm:max-w-[600pxs] md:mx-auto md:max-w-[700px] lg:max-w-[986px]  py-[85px] px-6 lg:px-2 min-h-fit '>
         <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/notes' element={<Notes/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-          <Route path='/Note' element={<SingleNote/>}/>
-          <Route path='*' element={<NotFound/>}/>
+          <Route path='/' element={
+          <Suspense fallback={<Loading/>}>
+            <Home/>
+          </Suspense>}/>
+          <Route path='/notes' element={
+          <Suspense fallback={<Loading/>}>
+            <Notes/>
+          </Suspense>}/>
+          <Route path='/contact' element={
+          <Suspense fallback={<Loading/>}>
+            <Contact/>
+          </Suspense>}/>
+          <Route path='/Note' element={
+          <Suspense fallback={<Loading/>}>
+            <SingleNote/>
+          </Suspense>}/>
+          <Route path='*' element={
+          <Suspense fallback={<Loading/>}>
+            <NotFound/>
+          </Suspense>}/>
         </Routes>
       </div>
       <Footer/>

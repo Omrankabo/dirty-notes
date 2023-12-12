@@ -1,14 +1,15 @@
-import React from 'react'
-import Card from '../components/Card'
+import { lazy,Suspense } from 'react'
+import Loading from '../components/loader/Loading'
+const Card = lazy(() =>  import('../components/Card'))
 const Notes = () => {
   // temporary list
-  const notes = [
-    {
-      category:'culculus',
-      title: 'Horizontal asymptotes',
-      description: 'How to evaulate vertical and horizontal asymptotes, and how to show them in a graph.'
-    }
-  ]
+  // const notes = [
+  //   {
+  //     category:'culculus',
+  //     title: 'Horizontal asymptotes',
+  //     description: 'How to evaulate vertical and horizontal asymptotes, and how to show them in a graph.'
+  //   }
+  // ]
   return (
     <section className=' container w-5/6 lg:max-w-[875px] mx-auto'>
       <h1 className='w-full mb-6 text-2xl font-medium uppercase '>Choose a category 👀</h1>
@@ -22,11 +23,21 @@ const Notes = () => {
       </div>
 
       <div className='grid grid-cols-1 gap-6 py-8 border-t-2 rounded-sm md:gap-4 sm:grid-cols-2 lg:grid-cols-3 border-secondary-100'>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
-        <Card/>
+        <Suspense fallback={<Loading/>}>
+          <Card/>         
+        </Suspense>
+        <Suspense fallback={<Loading/>}>
+          <Card/>         
+        </Suspense>
+        <Suspense fallback={<Loading/>}>
+          <Card/>         
+        </Suspense>
+        <Suspense fallback={<Loading/>}>
+          <Card/>         
+        </Suspense>
+        <Suspense fallback={<Loading/>}>
+          <Card/>         
+        </Suspense>
       </div>
     </section>
   )

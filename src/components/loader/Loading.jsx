@@ -2,7 +2,7 @@ import styles from './loading.module.css';
 
 const Loading = () => {
   return (
-    <div className='flex items-center justify-center w-full h-full gap-8'>
+    <div className='flex items-center justify-center w-full h-full gap-8 flex-col my-8'>
       <div className={`${styles.spinner} `}>
         <div></div>
         <div></div>
