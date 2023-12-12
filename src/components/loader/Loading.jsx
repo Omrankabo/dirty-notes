@@ -11,7 +11,7 @@ const Loading = () => {
         <div></div>
         <div></div>
       </div>
-      <span class=" text-sm mb-4 font-medium bg-clip-text text-transparent bg-gradient-to-r from-primary-base to-accent">
+      <span className=" text-sm mb-4 font-medium bg-clip-text text-transparent bg-gradient-to-r from-primary-base to-accent">
         Getting the magic ready..
       </span>
     </div>

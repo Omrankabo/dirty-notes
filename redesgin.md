@@ -22,9 +22,9 @@
 ## home page
 
 <!-- - one section -->
-- provreading
+<!-- - provreading -->
 - canvas animation sin waves or cos
-- remove some padding from the top
+<!-- - remove some padding from the top -->
 <!-- - change colors theme -->
 
 ## single note
@@ -44,3 +44,9 @@
 ## footer
 
 - send to whatsapp & telegram
+
+## funtionality to do
+
+- params to display in search bar
+- make category filter works
+- adding props to cards

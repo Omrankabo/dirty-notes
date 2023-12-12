@@ -3,8 +3,8 @@ const Home = () => {
   return (
     <main>
       <div className="flex flex-col md:items-center justify-center gap-2 my-8 h-[75vh] md:max-w-[584px] mx-auto  ">
-        <h2 class="py-2 px-4 rounded-md bg-background-50 text-text-base uppercase text-sm w-3/4">new study approach 0.01V 😆</h2>
-        <h1 class="sm:text-6xl md:text-7xl text-5xl my-2 font-medium md:text-center uppercase ">
+        <h2 className="py-2 px-4 rounded-md bg-background-50 text-text-base uppercase text-sm w-3/4">new study approach 0.01V 😆</h2>
+        <h1 className="sm:text-6xl md:text-7xl text-5xl my-2 font-medium md:text-center uppercase ">
         Tired of taking <span className="text-accent">
            notes
           </span>?

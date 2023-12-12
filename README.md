@@ -61,5 +61,5 @@ footer 5
 
 - single note page
 - category filter funtionality
-- build a sceheme to show notes
+<!-- - build a sceheme to show notes -->
 - save theme to local storage
