@@ -1,11 +1,16 @@
+import toast, { Toaster } from "react-hot-toast"
 import Box from "../components/Box"
-// import { useNavigate } from "react-router-dom"
 
 const Contact = () => {
-    // const navigate = useNavigate()
     return ( 
         <Box className='container w-full lg:max-w-[875px] mx-auto border-none'>
-        <div className="px-5 grid gap-8 grid-cols-1 md:grid-cols-2 py-24 mx-auto bg-background-50  text-text-base rounded-lg">
+        <div 
+        onFocus={
+            ()=> toast.error('Sorry this form is not working now',
+            {
+            icon:'😅'
+        })} 
+        className="px-5 grid gap-8 grid-cols-1 md:grid-cols-2 py-24 mx-auto bg-background-50  text-text-base rounded-lg">
             <div className="flex flex-col justify-center">
                 <div>
                     <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
@@ -53,7 +58,6 @@ const Contact = () => {
                 </div>
                 <div 
                 className="mt-8"
-                // onClick={()=>navigate('/')}
                 >
                     <button
                         className="uppercase text-sm font-bold tracking-wide bg-secondary-base text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-accent"
@@ -63,6 +67,7 @@ const Contact = () => {
                     </button>
                 </div>
             </form>
+            <Toaster/>
         </div>
         </Box>
 )
