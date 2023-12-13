@@ -8,8 +8,8 @@ const Footer = () => {
         <Link to={'/'} className="flex title-font font-medium items-center md:justify-start justify-center text-text">
           <span className="ml-3 text-xl">Dirty Notes</span>
         </Link>
-        <p className="text-sm text-text sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Dirty Notes —
-          <a href="https://twitter.com/omrankabo" className="text-text ml-1" rel="noopener noreferrer" target="_blank">@omrankabo</a>
+        <p className="text-sm text-text sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 Dirty Notes —
+          <span className="text-text ml-1 ">@CIVIL-ENG</span>
         </p>
         <span className="inline-flex gap-2 sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
           <FaTelegram className='text-2xl cursor-pointer' />

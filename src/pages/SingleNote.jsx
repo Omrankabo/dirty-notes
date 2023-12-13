@@ -1,50 +1,47 @@
-import Box from "../components/Box"
 
 const SingleNote = () => {
   return (
     <section className='min-h-screen'>
-      <Box className={'p-6 bg-background-600 border-none'}>
-        
-      <h1 className='my-8 text-4xl underline decoration-accent'>Functions</h1>
-        
-        <p>
-          <span className='block text-accent'>**OVERVIEW** </span>
-          <span className="block">- What is a function?</span>
-          <span className="block">- How to describe it?</span>
-          <span className="block">- What are the typies of functions?</span> 
-          </p>
-        <h2 className='my-4 text-accent'> 1.1 Functions and Their Graphs</h2>
-  
-        <p>
-          Functions are a tool for describing the real world in mathematical terms. A function can be
-          represented by an equation, a graph, a numerical table, or a verbal description; we will use
-          all four representations throughout this book. This section reviews these function ideas.
-          Functions; Domain and Range
-          The temperature at which water boils depends on the elevation above sea level (the boiling
-          point drops as you ascend). The interest paid on a cash investment depends on the length of
-          time the investment is held. The area of a circle depends on the radius of the circle. The dis-
-          tance an object travels at constant speed along a straight-line path depends on the elapsed time.
-          In each case, the value of one variable quantity, say y, depends on the value of another
-          variable quantity, which we might call x. We say that “y is a function of x” and write this
-          symbolically as
-  
-          <span className='block p-4 rounded-sm text-accent bg-background-base'>{'>'} y = ƒ(x) (“y equals ƒ of x”).</span>
-  
-          In this notation, the symbol ƒ represents the function, the letter x is the independent variable
-          representing the input value of ƒ, and y is the dependent variable or output value of ƒ at x.
+      <div className="md:max-w-[640px] mx-auto">
+        {/* title */}
+        <h1 className="text-3xl mb-3">General rules of copy writing!📝</h1>
+        {/* subtitle or a random qoute*/}
+        <h2 className="text-gray-400 text-md">what rules you need to follow to make greatness a live?</h2>
+        {/* date of update - author */}
+        <div className="flex items-center justify-between text-gray-300 my-4">
+          <span className="block text-text-base">Civil Broadcast</span>
+          <span className="block">01/01/2024</span>
+        </div>
+        {/* sub heading */}
+        <p className="text-gray-400 mt-8">
+          You start writing but you don't know what to write?
         </p>
-        <h2 className='my-4 text-accent'> DEFINITION :</h2>
-        <p> 
-          A function ƒ from a set D to a set Y is a rule that assigns a unique
-          (single) element ƒ(x)∊Y to each element x∊D.
-          The set D of all possible input values is called the domain of the function. The set of
-          all output values of ƒ(x) as x varies throughout D is called the range of the function. The
-          range may not include every element in the set Y. The domain and range of a function can
-          be any sets of objects, but often in calculus they are sets of real numbers interpreted as
-          points of a coordinate line. (In Chapters 13–16, we will encounter functions for which the
-          elements of the sets are points in the coordinate plane or i)
-        </p>  
-      </Box>
+        <h3 className="text-lg my-1">First attempt 🤔:</h3>
+        <p className="text-gray-400">
+          When it's your first time writing about any topic you shoud do some type of brain storimg in order to get ideas, and do some free writing!.
+          what is free writing? it's to write whatever comes to your mind without any fear or thinking about the flow of the text and ideas.
+        </p>
+        <p className="text-gray-400 mt-4">
+          <span className="text-red-400">SO</span> keep in your mind not to delete anything of your draft. Whether it's related to the topic or not. <span className="text-red-400"> Stay focus</span> and write try not to be driven by your imagination and forget about writing.
+        </p>
+        <p className="text-gray-400">
+          Try to grab your <span className="text-red-400">audience attention</span> 👀, with stories, questions, suprise, examples, and ...etc.
+        </p>
+        {/* paragraph */}
+        <h3 className="text-lg mt-4 mb-1">Some structure tips to make your writing looks more appealing 😎</h3>
+        <p className="text-gray-400">
+          - Firstly, try to use active voice it's enough of 'Some people..'.<br/>
+          - your world line shoud not exceed 10 to 15 words.<br/>
+          - your paragraphs should be in range of 4 to 6. <br/>
+          - use bullets and numbers. <br/>
+          and make sure that one paragraph is consisting of one idea.
+        </p>
+        <p className="text-gray-400 mt-4">
+          when writing there is a lot of things to consider if you want to produce a masterpiece.Try to paly with factors like practicing and it's a vital factor, and a lot of other factors.<br/>
+          we may discuss in coming days 🙈💙.
+        </p>
+      </div>
+      
     </section>
   )
 }
