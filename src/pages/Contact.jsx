@@ -6,7 +6,7 @@ const Contact = () => {
         <Box className='container w-full lg:max-w-[875px] mx-auto border-none'>
         <div 
         onFocus={
-            ()=> toast.error('Sorry this form is not working now',
+            ()=> toast.error('معليش ما شغالة لسه',
             {
             icon:'😅'
         })} 

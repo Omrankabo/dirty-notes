@@ -16,12 +16,26 @@ const Notes = () => {
       active: false
     },
     {
-      Name: 'culculus',
+      Name: 'linear algebra',
+      active: false
+    },
+    {
+      Name: 'sudanese studies',
+      active: false
+    },
+    {
+      Name: 'chemistry',
+      active: false
+    },
+    {
+      Name: 'physics',
+      active: false
+    },
+    {
+      Name: 'all',
       active: false
     },
   ]
-  // useSearchParams
-  const [searchParam,setSearchParam] = useSearchParams();
   // temporary list
   const noteList = [
     {
@@ -60,11 +74,9 @@ const Notes = () => {
   // handle filter
   const handleFilter = (filter)=>{
     if (filter === 'all') {
-      setSearchParam({})
       setNotes(noteList)
     }
     else{
-      setSearchParam({filter:filter})
       setNotes(noteList.filter((item)=> item.category === filter))
     }
   }

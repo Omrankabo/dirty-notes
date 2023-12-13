@@ -10,10 +10,10 @@ const Home = () => {
         <h2 className="py-2 px-4 rounded-md bg-background-50 text-text-base uppercase text-sm w-3/4">new study approach 0.01V 😆</h2>
         <h1 className="sm:text-6xl md:text-7xl text-5xl my-2 font-medium md:text-center uppercase ">
         Tired of taking <span className="text-accent">
-           notes
+          notes
           </span>?
         or doesn't have enough <span className="text-accent">
-           time
+          time
           </span>?
   
         </h1>
