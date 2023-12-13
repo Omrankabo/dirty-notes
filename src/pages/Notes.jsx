@@ -10,7 +10,16 @@ const Card = lazy(() =>  import('../components/Card'))
 
 const Notes = () => {
   // list to display buttons
-  
+  const filterButtons = [
+    {
+      Name: 'culculus',
+      active: false
+    },
+    {
+      Name: 'culculus',
+      active: false
+    },
+  ]
   // useSearchParams
   const [searchParam,setSearchParam] = useSearchParams();
   // temporary list

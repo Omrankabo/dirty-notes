@@ -1,4 +1,5 @@
 
+import toast, { Toaster } from "react-hot-toast";
 import { Link } from "react-router-dom";
 const Home = () => {
   
@@ -26,9 +27,20 @@ const Home = () => {
           role="button" >
               Study now 😏
           </Link>
-          <a href="https://t.me/CIVIL_ENG_022_UofK_BOT" role="button" target="_blank"  rel="noreferrer" className="w-full px-2 py-2 text-sm text-center uppercase rounded-md text-text-100 bg-secondary-base">access our telegram bot</a>
+          <a 
+          // href="https://t.me/CIVIL_ENG_022_UofK_BOT"
+          href="/"
+          onClick={(e)=>{
+            e.preventDefault()
+            toast.error('لسه بدري ما تستعجل البل راجيك',{icon:'💙🙈'})
+          }} 
+          role="button" 
+          // target="_blank" 
+          rel="noreferrer" 
+          className="w-full px-2 py-2 text-sm text-center uppercase rounded-md text-text-100 bg-secondary-base">access our telegram bot</a>
         </div>
       </div>
+      <Toaster/>
     </main>
   )
 }
