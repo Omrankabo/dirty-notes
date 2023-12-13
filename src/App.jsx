@@ -14,7 +14,7 @@ const SingleNote = lazy(()=>import('./pages/SingleNote'))
 const App = () => {
   const {theme} = useTheme()
   return (
-    <div className={`${theme? 'dark' : ''} font-primary text-text-base bg-background-base min-w-screen min-h-screen bggrid flex flex-col items-center justify-center `}>
+    <div className={`${theme? 'dark' : ''} font-primary text-text-base bg-background-base min-w-screen min-h-screen gridlines flex flex-col items-center justify-center `}>
       <Nav/>
       <div className='container sm:max-w-[600pxs] md:mx-auto md:max-w-[700px] lg:max-w-[986px]  py-[85px] px-6 lg:px-2 min-h-fit '>
         <Routes>

@@ -25,7 +25,7 @@ export default {
         background: {
           50: 'color-mix(in srgb,var(--background) 55%, white 5%)',
           base:'var(--background)',
-          600: 'color-mix(in srgb,var(--background) 85%, black 15%)',
+          600: 'color-mix(in srgb,var(--background) 95%, black 5%)',
         },
         primary:{
           100: 'color-mix(in srgb,var(--primary) 10%, white)',

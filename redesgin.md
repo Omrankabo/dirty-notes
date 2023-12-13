@@ -18,6 +18,10 @@
 ## notes
 
 <!-- - for active category set a different color -->
+- make choose a cateogry component
+- create an array
+- use map to display all notes
+- use filter to reduce items depending on search paramss
 
 ## home page
 
@@ -30,7 +34,10 @@
 ## single note
 
 <!-- - without images -->
+--> props:
+
 - title
+- subtitle
 - main text
 <!-- - display inside a card -->
 - report issue
@@ -50,3 +57,8 @@
 - params to display in search bar
 - make category filter works
 - adding props to cards
+- dynamic routes
+
+## category
+
+- make a category component

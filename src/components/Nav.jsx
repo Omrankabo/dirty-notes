@@ -10,22 +10,27 @@ import { NavLink, Link } from 'react-router-dom'
 const Nav = () => {
   const {theme,handleTheme} = useTheme()
   const [open,setOpen] = useState(false);
+  const handleActive = ({isActive})=>{
+    return {
+      color: isActive? 'var(--accent)' : 'var(--text)',
+      textDecoration: isActive? 'underline' : 'none'
+    }
+  }
   
   const handleClick = ()=>{
     setOpen(!open);
   }
   
   return (
-    // TODO: how to make blur in tailwind  
     <nav className='fixed top-0 left-0 items-center w-screen py-4 backdrop-blur-sm'>
       <div className='container gap-16 md:mx-auto md:max-w-[700px] lg:max-w-[986px] flex justify-between px-4'>  
         {/* logo */}
         <Link to='/' className='text-lg font-bold'>Dirty Notes</Link>
         {/* desktop*/}
         <div className='items-center justify-start flex-1 hidden gap-6 md:flex'>
-          {/* TODO: react router dom internal links */}
-          <NavLink to={'/Notes'} className='cursor-pointer'>Notes</NavLink>
-          <NavLink to={'/Contact'} className='cursor-pointer'>Contact</NavLink>
+          {/* if active  underline text-accent */}
+          <NavLink style={handleActive} to={'/Notes'} className='cursor-pointer'>Notes</NavLink>
+          <NavLink style={handleActive} to={'/Contact'} className='cursor-pointer'>Contact</NavLink>
         </div>
         {/* mobile */}
         <div className='flex items-center gap-4 pr-4'>
@@ -34,11 +39,9 @@ const Nav = () => {
             {
               theme? <IoIosSunny/> : <IoIosMoon/>
             }
-            
           </button>
           {/* container */}
           <div className='md:hidden'>
-            {/* make a lighter bg */}
             <button className='p-2 rounded-sm cursor-pointer text-text-base bg-secondary-base' onClick={handleClick}>
               <FaBars className=''/>
             </button>
